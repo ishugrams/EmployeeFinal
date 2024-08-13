@@ -7,12 +7,8 @@ public class EmployeeWage{
             int empHrs;
             int totalEmpHrs = 0; 
             int totalEmpWage=0;
-            int totalWorkingDays=0;
             int wagePerHrs=20;
-            int numOfWorkingDays=20;
-            int numOfWorkingHrs=160;
 
-            while (totalEmpHrs <= numOfWorkingHrs && totalWorkingDays <= numOfWorkingDays) {
                  Random random = new Random();
             // Generate a random 0 ,1 or 2
                 int empCheck = random.nextInt(3);
@@ -40,9 +36,7 @@ public class EmployeeWage{
                         System.out.println("Total Wage :"+totalEmpWage);
                         break;
                 }
-                totalWorkingDays++;
-                System.out.println("Day No :" + totalWorkingDays + " Emp Hrs: " + empHrs);
-            }
+            
             totalEmpWage = totalEmpHrs * wagePerHrs;
             System.out.println("Total Working Hrs for  :"+totalEmpHrs);
             }
